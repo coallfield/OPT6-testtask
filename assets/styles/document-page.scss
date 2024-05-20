@@ -1,0 +1,49 @@
+.document-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .document-page__content {
+        max-width: 1156px;
+        margin:20px 0px 0px 40px ;
+        .navigation {
+
+            overflow-wrap: none;
+            font-size: small;
+            display: flex;
+            flex-direction: row;
+            
+            .circle {
+                width: 5px;
+                height: 5px;
+                background-color: black;
+                border-radius: 25px;
+            }
+            .nav-item {
+                color: black;
+                font-weight: 600;
+                span {
+                    color: #8F8F8F ;
+                }
+            }
+        }
+        .document-title {
+            margin-top: 20px;
+        }
+        .document-titles {
+            margin-top: 40px;
+            .document-titles__title {
+                
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                grid-gap: 20px;
+                
+                
+            }
+        }
+    }
+    
+}
+

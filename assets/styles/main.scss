@@ -1,0 +1,33 @@
+@import 'mixins.scss';
+
+
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px
+}
+
+@media(max-width: 1200px) {
+    .section-form {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 550px) {
+    .image-container {
+        scale: 80%;
+    }
+}
+@media(max-width: 440px) {
+    .image-container {
+        scale: 70%;
+     
+    }
+}
+@media(max-width: 380px) {
+    .image-container {
+        scale: 60%;
+     
+    }
+}

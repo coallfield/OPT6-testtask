@@ -1,0 +1,4 @@
+<template>
+<AppMain></AppMain>
+
+</template>

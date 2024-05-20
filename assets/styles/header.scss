@@ -1,0 +1,59 @@
+@import 'mixins.scss';
+@import 'variables';
+.header {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #000000 30%, #1C2734 70%);
+    
+}
+.dekstop-features {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 140px;
+}
+
+.navigation {
+  height: 100%;
+  @include flex-row;
+  color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.auth__features {
+  @include flex-row;
+}
+
+.login {
+    color: white;
+    cursor: pointer;
+}
+
+.number-container {
+    color: white;
+}
+.navigation__link{
+    @include flex-row;
+    cursor: pointer;
+}
+
+.registration__button {
+    width: 117px;
+    height: 37px;
+    background-color: #0584FE;
+    color: white;
+    @include button-hover
+    
+}
+.number-container {
+    font-weight: 600;
+}
+
+
