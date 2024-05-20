@@ -18,6 +18,7 @@
 
 const screenWidth = ref(1920)
 onMounted(() => {
+    screenWidth.value = window.innerWidth
     window.addEventListener('resize', () => {
         screenWidth.value = window.innerWidth
     })
