@@ -9,7 +9,7 @@
         margin:20px 0px 0px 40px ;
         .document-page__navigation {
             
-            overflow-wrap: none;
+    
             font-size: small;
             display: flex;
             flex-direction: row;
@@ -37,7 +37,7 @@
         .document-page__subtitles {
             margin-top: 25px;
             .document-page__subtitles__text {
-                
+                padding-right: 20px;
                 margin-top: 40px;
                 display: flex;
                 flex-direction: column;
@@ -50,3 +50,9 @@
     
 }
 
+@media(max-width: 530px) {
+    .document-page__navigation {
+      flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+}
