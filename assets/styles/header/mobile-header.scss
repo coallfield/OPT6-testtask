@@ -42,10 +42,10 @@
         position: absolute;
         z-index: 999;
         
-        top: 28%;
+        top: 12%;
        left:50%;
-       right: 50%;
-       transform: translate(-50%, -50%);
+     
+       transform: translate(-50%);
         display: flex;
         width: 100%;
         max-width: 320px;
@@ -64,5 +64,11 @@
             cursor: pointer;
             background-color: #1e1e1e;
         }
+    }
+}
+
+@media(max-height: 550px) {
+    .mobile-features__popup {
+        top: 16% !important; 
     }
 }
