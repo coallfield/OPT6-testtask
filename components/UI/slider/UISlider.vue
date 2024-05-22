@@ -1,8 +1,12 @@
 <template>
     <div class="slider">
         <h2 class="slider__name">Документы</h2>
-        <div class="slider__carousel" :style="{ 'margin-left': '-' + (100 * currentSlideIndex) + '%' }">
-            <UISliderItem :documents="homeDataStore.documents"></UISliderItem>
+        <div class="slider__carousel" :style="{ 'margin-left': '-' + ((innerWidth > 1190 ? 2250 : (innerWidth > 780 ? 1500 : 750 )) * currentSlideIndex) + 'px' }">
+        
+                <UISliderItem :documents="homeDataStore.documents"></UISliderItem>
+           
+               
+            
         </div>
         <button @click="currentSlideIndex = Slider.prevSlide(currentSlideIndex, innerWidth, homeDataStore.documents.length)" class="slider__prev-button"></button>
         <button @click="currentSlideIndex = Slider.nextSlide(currentSlideIndex, innerWidth, homeDataStore.documents.length)" class="slider__next-button"></button>

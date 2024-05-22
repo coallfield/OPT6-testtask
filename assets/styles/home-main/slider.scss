@@ -4,20 +4,15 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-
+  
   .slider {
-    overflow: hidden;
-  
-    overflow: hidden;
-
-    position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-  
-    margin-bottom: 50px;
-    width: 1100px;
-
-  
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 1148px;
     
   .slider__name {
     font-size: 2.161rem;
@@ -26,64 +21,70 @@
     text-align: center;
   }
     .slider__carousel {
-  
-      padding:0px 20px;
-    transition: ease 0.2s;
-    display: flex;
-    flex-direction: row;
-
-    grid-gap: 30px;
+   
+      transition: 0.2s ease;
+      grid-gap: 35px;
+      display: flex;
+      justify-content: flex-start;
+      width: 1090px;
       
-      .slider__card {
+   
 
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        width: 340px;
-        height: 450px;
+    
+
+    .slider__card {
+      max-width: 340px; 
+      flex-shrink: 0; 
+      width: 340px;
+      height: 450px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(1, 1, 1, 0.5);
+      
+      .slider__card__title {
+  
+        color: #1253A2;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+  
+      .slider__card__descr {
+        font-size: large;
+        color: black;
         margin-bottom: 20px;
+      }
+  
+      .slider__card__info {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 0 2px 4px rgba(1, 1, 1, 0.5);
-    
-        .slider__card__title {
-    
-          color: #1253A2;
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-        }
-    
-        .slider__card__descr {
-          font-size: large;
-          color: black;
-          margin-bottom: 20px;
-        }
-    
-        .slider__card__info {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          text-align: start;
-        }
-    
-        .slider__card__button {
-    
-          background-color: #007bff;
-          color: #fff;
-          @include button-hover;
-          padding: 10px 20px;
-          transition: background-color 0.3s ease;
-          width: 290px;
-          height: 45px;
-    
-        }
-    
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
       }
+  
+      .slider__card__button {
+  
+        background-color: #007bff;
+        color: #fff;
+        @include button-hover;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+        width: 290px;
+        height: 45px;
+  
+      }
+  
     }
   
+      
+    }
+    
     
   
     .slider__circles {
@@ -176,12 +177,23 @@
 
 @media(max-width: 1190px) {
   .slider {
-    max-width: 730px;
+  
+    width: 750px !important;
+  }
+  .slider__carousel {
+    max-width: 715px;
+    width: 715px;
+    
   }
 }
 
 @media(max-width: 780px) {
   .slider {
-    width: 365px !important;
+  
+    width: 375px !important;
+  }
+  .slider__carousel {
+    max-width: 340px !important;
+    width: 340px !important;
   }
 }
