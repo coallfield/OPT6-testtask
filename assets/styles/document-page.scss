@@ -7,33 +7,36 @@
     .document-page__content {
         max-width: 1156px;
         margin:20px 0px 0px 40px ;
-        .navigation {
-
+        .document-page__navigation {
+            
             overflow-wrap: none;
             font-size: small;
             display: flex;
             flex-direction: row;
+            align-items: center;
+            grid-gap: 10px;
             
-            .circle {
+            .navigation__circle {
                 width: 5px;
                 height: 5px;
                 background-color: black;
                 border-radius: 25px;
             }
-            .nav-item {
+            .navigation__item {
+                text-wrap: nowrap;
                 color: black;
                 font-weight: 600;
-                span {
+                .navigation__span {
                     color: #8F8F8F ;
                 }
             }
         }
-        .document-title {
+        .document-page__title {
             margin-top: 20px;
         }
-        .document-titles {
-            margin-top: 40px;
-            .document-titles__title {
+        .document-page__subtitles {
+            margin-top: 25px;
+            .document-page__subtitles__text {
                 
                 margin-top: 40px;
                 display: flex;

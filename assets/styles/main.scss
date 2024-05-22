@@ -1,33 +1,18 @@
-@import 'mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+* {
 
-.section-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 20px
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .app {
+    overflow: hidden;
+  
+  }
 
-@media(max-width: 1200px) {
-    .section-form {
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 550px) {
-    .image-container {
-        scale: 80%;
-    }
-}
-@media(max-width: 440px) {
-    .image-container {
-        scale: 70%;
-     
-    }
-}
-@media(max-width: 380px) {
-    .image-container {
-        scale: 60%;
-     
-    }
-}
+  body {
+    font-family: PT Sans, sans-serif;
+  }
+ 

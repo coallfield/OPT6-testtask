@@ -1,4 +1,4 @@
 <template>
-<AppMain></AppMain>
+<HomeMain></HomeMain>
 
 </template>

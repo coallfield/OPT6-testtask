@@ -4,7 +4,7 @@
 
 <template>
   <div class="app">
-    <AppHeader></AppHeader>
+    <HeaderApp></HeaderApp>
     <main class="main">
       <NuxtPage></NuxtPage>
     </main>
@@ -18,16 +18,6 @@
 
 
 <style lang="scss">
-@import './assets/styles/main.scss';
-* {
+@import './assets/styles/main';
 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: PT Sans;
-}
-.app {
-  overflow: hidden;
-
-}
 </style>

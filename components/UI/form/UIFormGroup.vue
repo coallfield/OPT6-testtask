@@ -1,12 +1,12 @@
 <template>
 
-    <div class="form-group">
-        <label for="car-number">{{ props.label }}</label>
+    <div class="form__group">
+        <label :for="props.id">{{ props.label }}</label>
         <input 
-            @input="setValue(($event.target as HTMLInputElement).value)" 
+            @input="emits('inputField', ($event.target as HTMLInputElement).value)" 
             v-bind:value="props.inputField" 
-            class="input"
-            :class="{'input-invalid': props.isError && props.inputField.trim() === ''}" 
+            class="form__input"
+            :class="{'form__input_invalid': props.isError && props.inputField.trim() === ''}" 
             required 
             type="text" 
             :id="props.id" />
@@ -24,11 +24,8 @@
 
     const emits = defineEmits(['inputField'])
 
-    function setValue(value: string) {
-        emits('inputField', value)
-    }
 </script>
 
 <style lang="scss">
- @import './assets/styles/form.scss';
+ @import '@/assets/styles/home-main/form.scss';
 </style>

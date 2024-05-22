@@ -1,11 +1,10 @@
 <template>
     <header class="header">
         <div class="dekstop-features" v-if="screenWidth > 1000">
-            <DekstopHeader></DekstopHeader>
+            <HeaderDekstop></HeaderDekstop>
         </div>
-
         <section v-else class="mobile-features">
-            <MobileBurger></MobileBurger>
+            <HeaderMobileBurger></HeaderMobileBurger>
         </section>
     </header>
 </template>
@@ -26,5 +25,5 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-@import './assets/styles/header.scss';
+@import './assets/styles/header/header.scss';
 </style>

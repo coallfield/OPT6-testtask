@@ -1,0 +1,34 @@
+@import '../mixins.scss';
+
+
+.section-form {
+    margin-top: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 40px
+}
+
+@media(max-width: 1200px) {
+    .section-form {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 550px) {
+    .section-form__image-container {
+        scale: 80%;
+    }
+}
+@media(max-width: 440px) {
+    .section-form__image-container {
+        scale: 70%;
+     
+    }
+}
+@media(max-width: 380px) {
+    .section-form__image-container {
+        scale: 60%;
+     
+    }
+}

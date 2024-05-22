@@ -1,8 +1,8 @@
 <template>
     <div class="document-page">
         <div class="document-page__content">
-            <DocumentNavigation></DocumentNavigation>
-            <DocumentPageTitles></DocumentPageTitles>
+            <DocumentMainNavigation></DocumentMainNavigation>
+            <DocumentMainTitles></DocumentMainTitles>
         </div>
     </div>
 </template>

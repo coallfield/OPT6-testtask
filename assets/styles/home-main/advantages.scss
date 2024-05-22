@@ -1,8 +1,8 @@
-@import 'variables';
-@import 'mixins';
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixins';
 
-.advantages {
-  margin: 40px 0;
+.section-advantages {
+  margin: 98px 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -11,16 +11,17 @@
 
  
 
-  h3 {
+  .section-advantages__title {
     color: $text-color;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2.161rem;
+   
   }
 
   .advantages-list {
+    margin-top: 33px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
     justify-content: center;
     align-items: center;
 
@@ -34,24 +35,28 @@
       background-color: #FBFCFD;
       border: 1px solid #eaeaea;
       border-radius: 10px;
-      padding: 20px;
       width: 362px;
-      height: 150px;
+      height: 174px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      grid-gap: 15px;
-      .adv-info {
-        display: flex;
-        flex-direction: column;
+     
+      .advantage-item__info {
+       
         text-align: start;
-      
+        margin-left: 16px;
+        margin-right: 21px;
+        max-width: 247px;
+        margin-bottom: 23px;
       }
-
-      h4 {
-        color: $primary-color;
+      .advantage-item__img {
+        margin-left: 20px;
+      }
+      .advantage-item__title {
+        color: #1253A2;
+        margin-top: 24px;
         margin-bottom: 10px;
       }
 
-      p {
+      .advantage-item__descr {
         color: $text-color;
       }
     }

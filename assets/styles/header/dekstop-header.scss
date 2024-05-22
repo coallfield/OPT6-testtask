@@ -1,0 +1,56 @@
+@import '@/assets/styles/mixins.scss';
+@import '@/assets/styles/variables.scss';
+.dekstop-features {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 140px;
+
+    .dekstop-features__navigation {
+        height: 100%;
+        @include flex-row;
+        color: white;
+      
+        .dekstop-features__links {
+            @include flex-row;
+            cursor: pointer;
+            grid-gap: 30px;
+            .dekstop-features__link {
+                color: white;
+                text-decoration: none;
+                
+            }
+
+        }
+       
+
+
+    }
+
+    .dekstop-features__auth-navigation {
+
+        .dekstop-features__links {
+            @include flex-row;
+            color: white;
+            text-decoration: none;
+            grid-gap: 30px;
+            .dekstop-features__link {
+                color: white;
+                
+            }
+            .dekstop-features__links_number {
+                font-weight: 800;
+            }
+            .dekstop-features__registration-button {
+                width: 117px;
+                height: 37px;
+                background-color: #0584FE;
+                color: white;
+                @include button-hover
+            }
+        }
+
+    }
+}
